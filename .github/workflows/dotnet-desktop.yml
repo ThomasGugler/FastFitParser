@@ -23,5 +23,5 @@ jobs:
       run: |
         dotnet restore
         dotnet build -c Release
-        dotnet test -c Release
+        dotnet test -c Release --logger trx
         dotnet publish -c Release -o /dist
